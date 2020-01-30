@@ -1,0 +1,39 @@
+body {
+  background: white
+}
+
+nav, header.header {
+  display: none
+}
+
+main.content {
+  width: auto;
+  margin: 0 5%;
+  padding: 0;
+  border: 0;
+  float: none !important;
+  color: black;
+  background: transparent none
+}
+
+main.content p a:link:after, main.content h3 a:link:after, main.content h4 a:link:after, main.content h5 a:link:after, main.content h6 a:link:after, main.content p a:visited:after, main.content h3 a:visited:after, main.content h4 a:visited:after, main.content h5 a:visited:after, main.content h6 a:visited:after {
+  content: "\00A0("attr(href) ")\00A0";
+  font-size: 90%
+}
+
+main.content p a[href^="/"]:after, main.content h3 a[href^="/"]:after, main.content h4 a[href^="/"]:after, main.content h5 a[href^="/"]:after, main.content h6 a[href^="/"]:after {
+  content: "\00A0(https://thadeusb.com"attr(href) ")\00A0";
+  font-size: 90%
+}
+
+main.content .banner-img img {
+  opacity: 100 !important;
+  filter: alpha(opacity=100) !important
+}
+
+a:link, a:visited {
+  color: #520;
+  background: transparent;
+  font-weight: bold;
+  text-decoration: underline
+}
